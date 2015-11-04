@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".NavDrawerMainActivity">
+
+        <item
+            android:id="@+id/map"
+            app:showAsAction="never"
+            android:orderInCategory="0"
+            android:title="Maps"
+
+            />
+        <item android:id="@+id/search"
+            android:title="Search"
+            android:icon="@mipmap/ic_search"
+            app:showAsAction="ifRoom|collapseActionView"
+            app:actionViewClass="android.support.v7.widget.SearchView"
+            />
+
+
+        <item
+            android:id="@+id/contact"
+            app:showAsAction="never"
+            android:title="Team"/>
+        <item
+            android:id="@+id/about_us"
+            app:showAsAction="never"
+            android:title="Credits"/>
+
+
+
+</menu>

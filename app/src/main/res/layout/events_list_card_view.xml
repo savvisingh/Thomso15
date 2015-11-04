@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        card_view:cardCornerRadius="4dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#424242"
+            android:paddingLeft="@dimen/margin_16dp"
+            android:paddingRight="@dimen/margin_16dp"
+            android:paddingBottom="@dimen/margin_16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRONITE"
+                    android:background="@drawable/tag_background"
+                    android:textColor="@color/colorPrimaryText"
+                    android:paddingLeft="@dimen/margin_16dp"
+                    android:paddingRight="@dimen/margin_16dp"
+                    android:textStyle="bold"
+                    android:id="@+id/event_tag"
+                    android:textSize="@dimen/font_14sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="end"
+                    >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_checkbox"
+                    android:id="@+id/checkbox"
+
+                   />
+                </LinearLayout>
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Battle Of Bands"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_24sp"
+            />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:layout_weight="1"
+              >
+              <ImageView
+                  android:layout_width="24dp"
+                  android:layout_height="24dp"
+                  android:src="@drawable/ic_access_time_white_24dp"
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:id="@+id/event_time"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/margin_16dp"
+                  android:text="14:00 - 17:00"
+                  android:textColor="@color/colorAccent"
+                  />
+          </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_place_white_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_16dp"
+                    android:id="@+id/event_venue"
+                    android:text="Open Air Theatre"
+                    android:textSize="@dimen/font_16sp"
+                    android:textColor="@color/colorSecondryText"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

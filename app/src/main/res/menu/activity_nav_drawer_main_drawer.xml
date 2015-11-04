@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/menu_top"
+        >
+            <item android:id="@+id/my_favourite" android:icon="@drawable/ic_bookmark_white_24dp"
+                android:title="My Favourites" />
+            <item android:id="@+id/ongoing_events" android:icon="@drawable/ic_pin_drop_white_24dp"
+                android:title="OnGoing Events" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_middle"
+        >
+        <item android:id="@+id/day0" android:icon="@drawable/ic_today_white_24dp"
+            android:title="Day 0" />
+        <item android:id="@+id/day1" android:icon="@drawable/ic_today_white_24dp"
+            android:title="Day 1" />
+        <item android:id="@+id/day2" android:icon="@drawable/ic_today_white_24dp"
+            android:title="Day 2" />
+        <item android:id="@+id/day3" android:icon="@drawable/ic_today_white_24dp"
+            android:title="Day 3" />
+    </group>
+
+
+
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+    <item android:id="@+id/events_by_tag" android:icon="@drawable/ic_event_note_white_24dp"
+                android:title="Events" />
+            <item android:id="@+id/map_iitr" android:icon="@drawable/ic_map_white_24dp"
+                android:title="Map" />
+        </group>
+
+</menu>
